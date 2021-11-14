@@ -74,7 +74,37 @@ Loss: 0.5900665521621704, Accuracy: 0.7240816354751587
 
 - Model optimization
 
+1. Attempt 1: [AlphabetSoupCharity_Optimzation_Attempt1]()
+    - Change the number of neurons for the second layer from 30 to 50.
 
+Result:
+```
+268/268 - 2s - loss: 0.5572 - accuracy: 0.7257
+Loss: 0.557157576084137, Accuracy: 0.7257142663002014
+```
+
+2. Attempt2: [AlphabetSoupCharity_Optimzation_Attempt2]()
+	- Change the number of neurons for the second layer from 30 to 50.
+	- Add the third layer with 30 neurons, activation = ReLU.
+	- Drop ‘SPECIAL_CONSIDERATIONS’ column.
+
+Result:
+```
+268/268 - 0s - loss: 0.5601 - accuracy: 0.7273
+Loss: 0.5600594878196716, Accuracy: 0.7273469567298889
+```
+
+3. Attempt3: [AlphabetSoupCharity_Optimzation_Attempt3]()
+	- Change the number of neurons for the second layer from 30 to 50.
+	- Add the third layer with 30 neurons.
+	- Drop ‘SPECIAL_CONSIDERATIONS’ column.
+	- Change activation function from ReLU to Tanh for three layers.
+
+Result:
+```
+268/268 - 0s - loss: 0.5554 - accuracy: 0.7264
+Loss: 0.5553865432739258, Accuracy: 0.7264139652252197
+```
 
 ## Summary
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
