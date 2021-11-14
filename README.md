@@ -74,7 +74,7 @@ Loss: 0.5900665521621704, Accuracy: 0.7240816354751587
 
 - Model optimization
 
-1. Attempt 1: [AlphabetSoupCharity_Optimzation_Attempt1]()
+1. Attempt 1: [AlphabetSoupCharity_Optimzation_Attempt1](AlphabetSoupCharity_Optimzation_attempt1.ipynb)
     - Change the number of neurons for the second layer from 30 to 50.
 
 Result:
@@ -83,7 +83,7 @@ Result:
 Loss: 0.557157576084137, Accuracy: 0.7257142663002014
 ```
 
-2. Attempt2: [AlphabetSoupCharity_Optimzation_Attempt2]()
+2. Attempt2: [AlphabetSoupCharity_Optimzation_Attempt2](AlphabetSoupCharity_Optimzation_attempt2.ipynb)
 	- Change the number of neurons for the second layer from 30 to 50.
 	- Add the third layer with 30 neurons, activation = ReLU.
 	- Drop ‘SPECIAL_CONSIDERATIONS’ column.
@@ -94,7 +94,7 @@ Result:
 Loss: 0.5600594878196716, Accuracy: 0.7273469567298889
 ```
 
-3. Attempt3: [AlphabetSoupCharity_Optimzation_Attempt3]()
+3. Attempt3: [AlphabetSoupCharity_Optimzation_Attempt3](AlphabetSoupCharity_Optimzation_attempt3.ipynb)
 	- Change the number of neurons for the second layer from 30 to 50.
 	- Add the third layer with 30 neurons.
 	- Drop ‘SPECIAL_CONSIDERATIONS’ column.
@@ -107,4 +107,6 @@ Loss: 0.5553865432739258, Accuracy: 0.7264139652252197
 ```
 
 ## Summary
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+Overall, the performance of initial model is 72.41%, after optimizing the model such as dropping additional column, adding more neurons and hidden layer and using different activation function, the performance has slightly increased to 72.73%. But, still unable to achieve the target 75%.
+
+As the target column 'IS_SUCCESSFUL' is a binary data, we can use supervised machine learning model such as Logistic Regression, Decision Trees, Support vector machine (SVM) to compare the performances and find the best one.
